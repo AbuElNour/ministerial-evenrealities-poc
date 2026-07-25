@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@mc/contracts": "*",
-    "express": "^4.19.2",
+    "express": "^5.2.1",
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
+    "@types/express": "^5.0.6",
     "@types/ws": "^8.5.12",
     "tsx": "^4.19.0"
   }
