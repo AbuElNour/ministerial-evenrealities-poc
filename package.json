@@ -1,0 +1,21 @@
+{
+  "name": "ministerial-evenrealities-poc",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "workspaces": ["contracts", "scripts", "plugin"],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "npm -w @mc/contracts run typecheck && tsc -p scripts/tsconfig.json && tsc -p plugin/tsconfig.json",
+    "eval": "npm -w @mc/scripts run eval",
+    "replay": "npm -w @mc/scripts run replay --",
+    "replay:check": "npm -w @mc/scripts run replay:check",
+    "stub-bridge": "npm -w @mc/scripts run stub-bridge",
+    "plugin:dev": "npm -w minister-hud-plugin run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "typescript": "^5.5.4",
+    "vitest": "^3.0.0"
+  }
+}

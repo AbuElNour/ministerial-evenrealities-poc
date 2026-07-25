@@ -1,0 +1,29 @@
+{
+  "$id": "bridge-message.schema.json",
+  "oneOf": [
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "sessionId"],
+      "properties": { "kind": { "const": "hello" }, "sessionId": { "type": "string", "minLength": 1 } }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "sessionId"],
+      "properties": { "kind": { "const": "hello_ack" }, "sessionId": { "type": "string", "minLength": 1 } }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "card"],
+      "properties": { "kind": { "const": "card" }, "card": { "$ref": "hud-card.schema.json" } }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "event", "source"],
+      "properties": {
+        "kind": { "const": "input" },
+        "event": { "enum": ["tap", "double_tap", "swipe_up", "swipe_down"] },
+        "source": { "enum": ["ring", "glasses", "sim", "unknown"] }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$id": "minutes-document.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meetingId", "title", "attendees", "keyPoints", "decisions", "actionItems", "summaryEn", "summaryAr"],
+  "properties": {
+    "meetingId": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "attendees": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "keyPoints": { "type": "array", "items": { "type": "string" } },
+    "decisions": { "type": "array", "items": { "type": "string" } },
+    "actionItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["owner", "what", "due"],
+        "properties": {
+          "owner": { "type": "string", "minLength": 1 },
+          "what": { "type": "string", "minLength": 1 },
+          "due": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "summaryEn": { "type": "string", "minLength": 1 },
+    "summaryAr": { "type": "string", "minLength": 1 }
+  }
+}

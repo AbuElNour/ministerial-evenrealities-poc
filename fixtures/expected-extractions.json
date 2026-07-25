@@ -1,0 +1,8 @@
+{
+  "allOtherSegmentsExtractNothing": true,
+  "commitments": [
+    { "segmentSeq": 10, "who": "Orion Systems",    "whatContains": "readiness study", "due": "2026-07-31" },
+    { "segmentSeq": 13, "who": "Orion Systems",    "whatContains": "40 engineers",    "due": "2026-09" },
+    { "segmentSeq": 16, "who": "Executive Office", "whatContains": "workshop",         "due": "+14d" }
+  ]
+}

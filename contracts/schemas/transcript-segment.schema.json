@@ -1,0 +1,15 @@
+{
+  "$id": "transcript-segment.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sessionId", "seq", "tStartMs", "tEndMs", "speaker", "text", "final"],
+  "properties": {
+    "sessionId": { "type": "string", "minLength": 1 },
+    "seq": { "type": "integer", "minimum": 1 },
+    "tStartMs": { "type": "integer", "minimum": 0 },
+    "tEndMs": { "type": "integer", "minimum": 0 },
+    "speaker": { "enum": ["wearer", "visitor", "unknown"] },
+    "text": { "type": "string", "minLength": 1 },
+    "final": { "type": "boolean" }
+  }
+}

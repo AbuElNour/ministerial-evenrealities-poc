@@ -1,0 +1,14 @@
+{
+  "package_id": "dev.example.executivebrief",
+  "name": "Executive Brief HUD",
+  "version": "0.1.0",
+  "edition": "202601",
+  "min_app_version": "2.2.1",
+  "min_sdk_version": "0.0.11",
+  "entrypoint": "index.html",
+  "supported_languages": ["en"],
+  "permissions": [
+    { "name": "g2-microphone", "desc": "Captures meeting audio for live transcription" },
+    { "name": "network", "desc": "Connects to the briefing bridge and speech service", "whitelist": ["https://api.deepgram.com", "wss://api.deepgram.com", "http://localhost:8787", "ws://localhost:8787"] }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$id": "hud-card.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "line1", "seq"],
+  "properties": {
+    "type": { "enum": ["agenda", "briefing", "live_summary", "commitment_flash", "close", "protocol_nudge"] },
+    "line1": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "line2": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "seq": { "type": "integer", "minimum": 0 }
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "mode": "deterministic-offline",
+  "cases": 20,
+  "trials": 60,
+  "passed": 60,
+  "successRate": 1,
+  "p50LatencyMs": 0,
+  "p95LatencyMs": 0.016,
+  "estimatedCostUsd": 0,
+  "outcomes": [
+    {
+      "case": 1,
+      "trial": 1,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 1,
+      "trial": 2,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 1,
+      "trial": 3,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 2,
+      "trial": 1,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 2,
+      "trial": 2,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 2,
+      "trial": 3,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 3,
+      "trial": 1,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 3,
+      "trial": 2,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 3,
+      "trial": 3,
+      "expected": "Orion Systems",
+      "actual": "Orion Systems",
+      "passed": true
+    },
+    {
+      "case": 4,
+      "trial": 1,
+      "expected": "Executive Office",
+      "actual": "Executive Office",
+      "passed": true
+    },
+    {
+      "case": 4,
+      "trial": 2,
+      "expected": "Executive Office",
+      "actual": "Executive Office",
+      "passed": true
+    },
+    {
+      "case": 4,
+      "trial": 3,
+      "expected": "Executive Office",
+      "actual": "Executive Office",
+      "passed": true
+    },
+    {
+      "case": 5,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 5,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 5,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 6,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 6,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 6,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 7,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 7,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 7,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 8,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 8,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 8,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 9,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 9,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 9,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 10,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 10,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 10,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 11,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 11,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 11,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 12,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 12,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 12,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 13,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 13,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 13,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 14,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 14,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 14,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 15,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 15,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 15,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 16,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 16,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 16,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 17,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 17,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 17,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 18,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 18,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 18,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 19,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 19,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 19,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 20,
+      "trial": 1,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 20,
+      "trial": 2,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": 20,
+      "trial": 3,
+      "expected": null,
+      "actual": null,
+      "passed": true
+    }
+  ]
+}

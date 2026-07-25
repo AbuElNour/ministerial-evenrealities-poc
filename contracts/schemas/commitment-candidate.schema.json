@@ -1,0 +1,14 @@
+{
+  "$id": "commitment-candidate.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["who", "what", "due", "confidence", "verbatim", "segmentSeq"],
+  "properties": {
+    "who": { "enum": ["Orion Systems", "Executive Office"] },
+    "what": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "due": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "verbatim": { "type": "string", "minLength": 1 },
+    "segmentSeq": { "type": "integer", "minimum": 1 }
+  }
+}

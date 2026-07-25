@@ -1,0 +1,21 @@
+{
+  "name": "@mc/scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "eval": "tsx src/eval.ts",
+    "replay": "tsx src/replay.ts",
+    "replay:check": "tsx src/replay-check.ts",
+    "stub-bridge": "tsx src/stub-bridge/main.ts"
+  },
+  "dependencies": {
+    "@mc/contracts": "*",
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/ws": "^8.5.12",
+    "tsx": "^4.19.0"
+  }
+}
