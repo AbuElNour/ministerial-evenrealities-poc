@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "eval": "tsx src/eval.ts",
+    "eval:live": "tsx src/eval-live.ts",
     "replay": "tsx src/replay.ts",
     "replay:check": "tsx src/replay-check.ts",
     "stub-bridge": "tsx src/stub-bridge/main.ts"

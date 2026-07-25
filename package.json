@@ -8,6 +8,8 @@
     "test": "vitest run",
     "typecheck": "npm -w @mc/contracts run typecheck && tsc -p scripts/tsconfig.json && tsc -p plugin/tsconfig.json",
     "eval": "npm -w @mc/scripts run eval",
+    "eval:live": "npm -w @mc/scripts run eval:live --",
+    "eval:live:validate": "npm -w @mc/scripts run eval:live -- --validate-only",
     "replay": "npm -w @mc/scripts run replay --",
     "replay:check": "npm -w @mc/scripts run replay:check",
     "stub-bridge": "npm -w @mc/scripts run stub-bridge",

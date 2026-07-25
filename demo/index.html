@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Synthetic Executive Agent Replay</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07090d;--panel:#11151c;--line:#29313b;--text:#f4f7fa;--muted:#9ca9b7;--cyan:#7ce6ef;--amber:#ffc766;--green:#72e6a2;font-family:Inter,system-ui,sans-serif}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% -20%,#24384a 0,transparent 48%),var(--bg);color:var(--text)}
+    main{width:min(1160px,calc(100% - 32px));margin:auto;padding:42px 0}.eyebrow{color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:.18em;font-weight:850}h1{font-size:clamp(38px,6vw,68px);line-height:.98;letter-spacing:-.045em;max-width:900px;margin:12px 0}.lede{color:var(--muted);font-size:18px;line-height:1.6;max-width:760px}
+    .layout{display:grid;grid-template-columns:1fr 390px;gap:18px;margin-top:28px}.panel{border:1px solid var(--line);border-radius:22px;background:#0f1319e8;padding:20px;box-shadow:0 28px 80px #0007}.timeline{display:grid;gap:10px;max-height:470px;overflow:auto;padding-right:4px}.segment{display:grid;grid-template-columns:58px 1fr;gap:12px;border:1px solid #202832;border-radius:13px;padding:12px;background:#0a0d12}.segment.hit{border-color:#6a5731;background:#1b170f}.seq{font:12px ui-monospace,monospace;color:var(--muted)}.speaker{font-size:11px;color:var(--cyan);text-transform:uppercase;letter-spacing:.1em}.text{font-size:14px;line-height:1.45;margin-top:4px}
+    button{width:100%;margin-top:14px;border:0;border-radius:12px;padding:12px;background:var(--cyan);color:#062126;font:inherit;font-weight:850;cursor:pointer}.glasses{border:2px solid #4d5b68;border-radius:70px;padding:20px 18px;margin-bottom:18px;background:#05070a;box-shadow:inset 0 0 40px #000,0 0 36px #7ce6ef1a}.hud{min-height:150px;border-radius:46px;background:linear-gradient(135deg,#071b1d,#0b151a);padding:25px;color:#d8fbff;text-align:center;display:grid;place-content:center}.hud .kind{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--cyan)}.hud strong{font-size:20px;margin:8px 0}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.metric{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}.metric b{display:block;font-size:22px;color:var(--green)}.metric span{font-size:10px;color:var(--muted);text-transform:uppercase}.events{margin-top:16px;display:grid;gap:8px}.event{font:12px ui-monospace,monospace;border-left:3px solid var(--cyan);padding:8px 10px;background:#0a0e13;color:var(--muted)}.note{color:var(--muted);font-size:12px;line-height:1.6;margin-top:14px}
+    @media(max-width:840px){.layout{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Recorded synthetic input · deterministic replay</div>
+  <h1>From transcript event to heads-up commitment card.</h1>
+  <p class="lede">Replay the public fixture through schema validation, commitment extraction, the local bridge, the glasses adapter, and bilingual minutes—with every boundary visible.</p>
+  <section class="layout">
+    <div class="panel">
+      <div id="timeline" class="timeline"></div>
+      <button id="replay">Replay next commitment</button>
+    </div>
+    <aside class="panel">
+      <div class="glasses"><div id="hud" class="hud"><span class="kind">Even Hub simulator</span><strong>Ready for replay</strong><span>No hardware or provider account required</span></div></div>
+      <div class="metrics"><div class="metric"><b>61</b><span>tests</span></div><div class="metric"><b>3/3</b><span>commitments</span></div><div class="metric"><b>0</b><span>false positives</span></div></div>
+      <div id="events" class="events"></div>
+      <p class="note">The people, organizations, geography, commitments, collaboration channel, and outcomes in this replay are fictional.</p>
+    </aside>
+  </section>
+</main>
+<script>
+const segments=[
+ {seq:9,speaker:"visitor",text:"That helps. Let us discuss readiness."},
+ {seq:10,speaker:"visitor",text:"We will deliver the readiness study by the end of July.",who:"Orion Systems",what:"Deliver readiness study",due:"2026-07-31"},
+ {seq:12,speaker:"visitor",text:"We also discussed staffing for the example."},
+ {seq:13,speaker:"visitor",text:"We are committing forty engineers to the Example City pilot starting September.",who:"Orion Systems",what:"Commit 40 engineers",due:"2026-09"},
+ {seq:15,speaker:"visitor",text:"They will need onboarding support."},
+ {seq:16,speaker:"wearer",text:"The executive office will arrange the innovation-zone workshop within two weeks.",who:"Executive Office",what:"Arrange workshop",due:"+14d"},
+ {seq:19,speaker:"visitor",text:"We are still evaluating it. There is no commitment."}
+];const hits=segments.filter(s=>s.who);let index=0;const $=id=>document.getElementById(id);
+$("timeline").innerHTML=segments.map(s=>`<div class="segment ${s.who?"hit":""}" id="s${s.seq}"><div class="seq">SEQ ${s.seq}</div><div><div class="speaker">${s.speaker}</div><div class="text">${s.text}</div></div></div>`).join("");
+function replay(){const hit=hits[index%hits.length];document.querySelectorAll(".segment").forEach(e=>e.style.outline="none");$("s"+hit.seq).style.outline="2px solid var(--amber)";$("s"+hit.seq).scrollIntoView({behavior:"smooth",block:"center"});
+$("hud").innerHTML=`<span class="kind">Commitment detected · seq ${hit.seq}</span><strong>${hit.who}</strong><span>${hit.what}<br>Due ${hit.due}</span>`;
+$("events").innerHTML=[`schema.validated · seq=${hit.seq}`,`extractor.commitment · confidence=0.95`,`bridge.delivered · local replay`,`minutes.updated · bilingual fixture`].map(e=>`<div class="event">${e}</div>`).join("");index++}
+$("replay").onclick=replay;
+</script>
+</body>
+</html>

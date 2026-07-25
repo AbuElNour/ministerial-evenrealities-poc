@@ -22,5 +22,5 @@ jobs:
       - run: npm run typecheck
       - run: npm run replay:check
       - run: npm run eval
+      - run: npm run eval:live:validate
       - run: npm audit --audit-level=low
-
