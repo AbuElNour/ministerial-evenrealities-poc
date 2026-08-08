@@ -12,7 +12,7 @@
   "dependencies": {
     "@mc/contracts": "*",
     "express": "^4.19.2",
-    "ws": "^8.18.0"
+    "ws": "^8.21.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
